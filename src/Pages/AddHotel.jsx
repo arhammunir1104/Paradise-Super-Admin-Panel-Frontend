@@ -76,7 +76,7 @@ function AddHotel() {
             formData.append("hotel_des", userInput.hotel_des);
             formData.append("hotel_logo", e.target.hotel_logo.files[0]);
 
-            let data = await fetch("http://localhost:3000/createhotel", {
+            let data = await fetch("https://paradise-super-admin-panel-backend.vercel.app/createhotel", {
                 method: "POST",
                 body: formData,
               })
